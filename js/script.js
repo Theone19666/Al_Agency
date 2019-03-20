@@ -92,3 +92,8 @@ $(document).on('click','.header.menu_on .close', function(){
 		$(".header").removeClass('menu_on');
 		$('body').css('overflow','auto');
 });
+$(window).resize(function(){
+  if($(window).width()<1105){
+      $('.main_team-comtainer-about')
+  }
+});
