@@ -335,7 +335,7 @@ ul,li{
     width: 42%;
     height: 69px;
     background-color: #e5e5e5;
-    padding-left: 53px;
+    padding: 0 53px;
 }
 .main_contact form textarea,.main_contact form button{
     width: 100%;
