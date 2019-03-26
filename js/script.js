@@ -93,7 +93,22 @@ $(document).on('click','.header.menu_on .close', function(){
 		$('body').css('overflow','auto');
 });
 $(window).resize(function(){
-  if($(window).width()<1105){
-      $('.main_team-comtainer-about')
-  }
+  resize_about_team();
 });
+$(document).ready(function(){
+    resize_about_team();
+});
+function resize_about_team(){
+    if($(window).width()<1348){
+        if($('.main_team-container-photo .main_team-comtainer-about').length==0){
+              $('.main_team-container-photo').append($('.main_team-comtainer-about').clone());
+              $('.main_team-slider .main_team-comtainer-about').remove();
+        }
+    }
+    else{
+         if($('.main_team-slider .main_team-comtainer-about').length==0){
+              $('.main_team-slider').prepend($('.main_team-comtainer-about').clone());
+              $('.main_team-container-photo .main_team-comtainer-about').remove();
+        }       
+    }
+}
