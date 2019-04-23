@@ -516,7 +516,7 @@ footer a:not(:last-child){
 		width: 69px;
 		position: absolute;
 		top: 20px;
-		right: 30px;
+		right: 5px;
 	}
     .main_organisation{
         flex-direction: column;
